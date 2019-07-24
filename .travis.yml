@@ -84,6 +84,7 @@ install:
   - '[ "$TRAVIS_OS_NAME" != osx ] || brew install cppcheck doxygen graphviz qt$BREW'
   - '[ "$TRAVIS_OS_NAME" != osx ] || brew link --force qt$BREW'
   - ls -la /opt
+  - pwd
   - qmake -v
 
 before_script:
